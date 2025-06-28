@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import profileImage from '../assets/images/img.jpg'
 const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
@@ -24,7 +24,7 @@ function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <img
-              src="./src/assets/images/img.jpg"
+              src={profileImage}
               alt="Manish Butola"
               className="w-10 h-10 rounded-full object-cover"
             />

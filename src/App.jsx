@@ -12,7 +12,7 @@ import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MY_PORTFOLIO">
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
