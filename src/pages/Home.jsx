@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'; // Import Link
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -99,16 +100,17 @@ function Home() {
           >
             Hi, I'm <span className="font-bold text-yellow-300">Manish Butola</span>, a passionate Full Stack Developer, Software Trainer & Developer crafting responsive and dynamic web applications & Software with java, React, Node.js, and more.
           </motion.p>
-          <motion.a
-            href="/contact-us"
+          <motion.div
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             whileHover={{ scale: 1.1 }}
             className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold flex items-center space-x-2"
           >
-            <span>Get in Touch</span>
-            <FaArrowRight />
-          </motion.a>
+            <Link to="/contact-us" className="flex items-center space-x-2">
+              <span>Get in Touch</span>
+              <FaArrowRight />
+            </Link>
+          </motion.div>
         </div>
       </motion.section>
 
