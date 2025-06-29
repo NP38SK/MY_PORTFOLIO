@@ -106,7 +106,7 @@ function Home() {
             whileHover={{ scale: 1.1 }}
             className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold flex items-center space-x-2"
           >
-            <Link to="/ContactUs" className="flex items-center space-x-2">
+            <Link to="./ContactUs" className="flex items-center space-x-2">
               <span>Get in Touch</span>
               <FaArrowRight />
             </Link>
